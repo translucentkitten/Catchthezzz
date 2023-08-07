@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 780px;
+    margin: 50px auto;
+    border: 3px solid #333;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.falling-words {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.falling-words div {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.player-word {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.score {
+    font-size: 24px;
+}
